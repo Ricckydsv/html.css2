@@ -4,8 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@font-face {
+    font-family: 'Just Another Hand';
+    src: url('Just\ Another\ Hand.ttf') format('truetype');
+    font-weight: normal;
+}
+
 :root {
     --font-padrão: 'Sriracha', 'cursive';
+    --font-destaque: 'Just Another Hand'
 }
 
 header {
@@ -15,6 +22,7 @@ header {
     text-align: center;
     margin: -10px;
     padding: 10px;
+    box-shadow: 5px black;
 }
 
 header > h1 {
@@ -25,25 +33,58 @@ header > h1 {
 }
 
 header > p {
+    color: white;
     font-size: 20px;
-    margin: 0px;
-    font-family: var(--font-padrão);
+    margin: -90px;
 }
 
 main {
     background-color: white;
+    width: 100%;
+    min-width: 1200px;
+    max-width: 300px;
 }
 
 main p {
 font-size: 3em;
 text-align: left;
-font-family: ;
+font-family: var(--font-destaque);
 }
 
 #bloco {
-  background-image: url('imagens/background001.jpg');
+    background-color: transparent;
+    border-radius: 15px 15px 15px 15px;
+  color: white;
 }
 
 #bloco2 {
   background-image: url('imagens/background002.jpg');
+  color: white;
 }
+
+footer > p {
+    background-color: black;
+    color: white;
+    margin: -8px;
+    padding: 5px;
+    font-size: 0.9em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    background-color: white;
+    color: black;
+}
+
+#conteudo {
+    background-image: url('imagens/background001.jpg');   
+}
+
