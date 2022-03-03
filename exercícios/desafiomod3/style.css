@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Constella';
+    src: url('Constella.ttf') format('truetype');
+    font-weight: normal;
+}
 
+@font-face {
+    font-family: 'HyningsHandwriting';
+    src: url('HyningsHandwritingV2-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+:root {
+    --font-destaque: 'Dollar Bill', 'cursiva';
+    --font-padrão: 'HyningsHandwriting', 'cursiva'
+}
 
 * {
     margin: 0px;
@@ -22,10 +37,12 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
-    font-size: 10vw;
+    font-size: 7vw;
+    font-family: var(--font-destaque);
 }
 
 header > p {
+    padding: 10px;
     padding-bottom: 50px;
     font-variant: small-caps;
 }
@@ -56,6 +73,7 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-size: 3vw;
+    font-family: var(--font-padrão);
 }
 
 section.normal {
@@ -65,7 +83,6 @@ section.normal {
 
 section > p {
     padding-bottom: 2em;
-
 }
 
 section.imagem {
