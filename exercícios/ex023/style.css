@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table {
+    width: 400px;
+    border-collapse: collapse;
+}
+
+tr.a1 {
+    background-color: brown;
+}
+
+tr.a2 {
+    background-color: aqua;
+}
+
+tr.a3 {
+    background-color: darkseagreen;
+}
+
+tr.a4 {
+    background-color: yellow;
+}
+
+td.roxo {
+    background-color: purple;
+}
+
+td.green {
+    background-color: green;
+}
